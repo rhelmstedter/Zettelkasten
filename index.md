@@ -1,4 +1,4 @@
-# Generated Index
+[#](#.md) Generated Index
 
 - [todo](todo.md)
 - [mytemplate](mytemplate.md)

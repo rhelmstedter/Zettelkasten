@@ -2,3 +2,10 @@
 ######################
 .DS_Store
 .DS_Store?
+
+# Vim created files #
+#####################
+*.swp
+.vimwiki_tags
+.ztr-directory
+

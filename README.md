@@ -4,11 +4,12 @@ This is my personal zettelkasten based on the work of [Niklas Luhmann](https://e
 
 ## Inspiration
 
-The following sources have been influential in the creatation and structure of my zettelkasten.
+The following sources have been influential in the creation and structure of my zettelkasten.
 - [Zettelkasten.de](https://zettelkasten.de)
 - [How to Take Smart Notes](https://takesmartnotes.com)
 - [r/Zettelkasten](https://www.reddit.com/r/Zettelkasten/)
 - [The Zettelkasten Manifesto](https://www.youtube.com/watch?v=c5Tst3-zcWI)
+- [Understanding ZettelKasten](https://medium.com/@ethomasv/understanding-zettelkasten-d0ca5bb1f80e)
 
 ## Configuration
 

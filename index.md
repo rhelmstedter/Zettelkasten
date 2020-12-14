@@ -25,9 +25,7 @@
 
 
 ## ?
-
 - [Breaks](202012111901.md)
-
 ## Ahrens
 
 - [Reduce the number of Decisions](202012111857.md)

@@ -10,6 +10,8 @@ The following sources have been influential in the creation and structure of my 
 - [r/Zettelkasten](https://www.reddit.com/r/Zettelkasten/)
 - [The Zettelkasten Manifesto](https://www.youtube.com/watch?v=c5Tst3-zcWI)
 - [Understanding ZettelKasten](https://medium.com/@ethomasv/understanding-zettelkasten-d0ca5bb1f80e)
+- [zettel page](https://zk.zettel.page)
+
 
 ## Configuration
 

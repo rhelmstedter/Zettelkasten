@@ -1,6 +1,6 @@
 # Zettelkasten
 
-This is my personal zettelkasten based on the work of [Niklas Luhmann](https://en.wikipedia.org/wiki/Niklas_Luhmann). It all started after reading Edmun Wenick's post [building a note-taking system with vanilla vim](https://www.edwinwenink.xyz/posts/42-vim_notetaking/). All the way towards the end, he mentions that the folder structure soon became too compicated and instead he plans to allow for organic growth zettelkasten style. ~~Hours~~ Days later after going down the multiple ~~layers of hell~~ rabbit holes, I settled using [vimwiki](https://github.com/vimwiki) with the [vim-zettel](https://github.com/michal-h21/vim-zettel) plugin. [Zotero](https://www.zotero.org) is my reference manager. This set up is nice because with only a little bit of extra work it is fully compatible with [Zettlr](https://www.zettlr.com). Now I have the option of a nice GUI, or I can stick to the command line and vim. Finally, github acts as my backup. It also gives me access to all of my notes from my phone or a different computer if need be.  
+This is my personal zettelkasten based on the work of [Niklas Luhmann](https://en.wikipedia.org/wiki/Niklas_Luhmann). It all started after reading Edwin Wenink's post [building a note-taking system with vanilla vim](https://www.edwinwenink.xyz/posts/42-vim_notetaking/). All the way towards the end, he mentions that the folder structure soon became too compicated and instead he plans to allow for organic growth zettelkasten style. ~~Hours~~ Days later after going down the multiple ~~layers of hell~~ rabbit holes, I settled using [vimwiki](https://github.com/vimwiki) with the [vim-zettel](https://github.com/michal-h21/vim-zettel) plugin. [Zotero](https://www.zotero.org) is my reference manager. This set up is nice because with only a little bit of extra work it is fully compatible with [Zettlr](https://www.zettlr.com). Now I have the option of a nice GUI, or I can stick to the command line and vim. Finally, github.com acts as my backup. It also gives me access to all of my notes from my phone or a different computer if need be.  
 
 ## Inspiration
 
@@ -15,11 +15,11 @@ The following sources have been influential in the creation and structure of my 
 
 ## Configuration
 
-I use markdown sytax instead of wiki syntax (partly because I am lazy and down want to learn wiki, but mostly to make it more compatiple with other resources). I added the `.md` when vimwiki creates a new file and changed the format of the file name to yyyymmddhhmm.md. This allows links to be clickable and files names to match when using Zettlr. In addition to vimwiki :tags: I also add #tags. While it doubles the work each time I add tags, it allows me to seach tags directly in vim and use the tag feature in Zettlr.
+I use markdown syntax instead of wiki syntax (partly because I am lazy and down want to learn wiki, but mostly to make it more compatible with other resources). I added the `.md` when vimwiki creates a new file and changed the format of the file name to yyyymmddhhmm.md. This allows links to be clickable and files names to match when using Zettlr. In addition to vimwiki (e.g. :tags:) I also add hashtags (e.g. #tags). This allows me to search tags directly in vim and use the tag feature in Zettlr. I added a function to my ~/.vimrc that adds hashtags. It is mapped to `<leader>at`.
 
-In addition to vimwiki and vim-zettel I have added a couple more plugins to make the writing expereince more enjoyable: [pencil](https://github.com/reedes/vim-pencil), [goyo](https://github.com/junegunn/goyo.vim). 
+In addition to vimwiki and vim-zettel I have added a couple more plugins to make the writing experience more enjoyable: [pencil](https://github.com/reedes/vim-pencil), [goyo](https:/github.com/junegunn/goyo.vim). 
 
-The relevant portions of my .vimrc are found below.
+The relevant portions of my ~/.vimrc are found below.
 
 ```vim
 "=====[ vimwiki and vim-zettel ]===================
@@ -72,4 +72,12 @@ call plug#begin()
     Plug 'tpope/vim-fugitive'
     Plug 'reedes/vim-pencil'
 call plug#end()
+
+"=====[ Add Tags Function ]===================
+
+function! AddTags()
+    normal! mm0wly$$p`mlv$:s/\%V:/ #/gAkbkbýa
+endfunction
+nnoremap <leader>at :call AddTags()<cr>
+
 ```

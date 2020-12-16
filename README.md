@@ -15,7 +15,7 @@ The following sources have been influential in the creation and structure of my 
 
 ## Configuration
 
-I use markdown syntax instead of wiki syntax (partly because I am lazy and down want to learn wiki, but mostly to make it more compatible with other resources). I added the `.md` when vimwiki creates a new file and changed the format of the file name to yyyymmddhhmm.md. This allows links to be clickable and files names to match when using Zettlr. In addition to vimwiki (e.g. :tags:) I also add hashtags (e.g. #tags). This allows me to search tags directly in vim and use the tag feature in Zettlr. I added a function to my ~/.vimrc that adds hashtags. It is mapped to `<leader>at`.
+I use markdown syntax instead of wiki syntax (partly because I am lazy and down want to learn wiki, but mostly to make it more compatible with other resources). I added the `.md` when vimwiki creates a new file and changed the format of the file name to yyyymmddhhmm.md. This allows links to be clickable and files names to match when using Zettlr. In addition to vimwiki tags (e.g. :tags:) I also add hashtags (e.g. #tags). This allows me to search tags directly in vim and use the tag feature in Zettlr. I added a function to my ~/.vimrc that adds hashtags. It is mapped to `<leader>at`.
 
 In addition to vimwiki and vim-zettel I have added a couple more plugins to make the writing experience more enjoyable: [pencil](https://github.com/reedes/vim-pencil), [goyo](https:/github.com/junegunn/goyo.vim). 
 

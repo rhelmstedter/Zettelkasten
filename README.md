@@ -1,6 +1,6 @@
 # Zettelkasten
 
-This is my personal [zettelkasten](https://en.wikipedia.org/wiki/Zettelkasten) based on the work of [Niklas Luhmann](https://en.wikipedia.org/wiki/Niklas_Luhmann). It all started after reading Edwin Wenink's post [building a note-taking system with vanilla vim](https://www.edwinwenink.xyz/posts/42-vim_notetaking/). At the end, he mentions that the folder structure became too complicated and instead he plans to allow for organic growth zettelkasten style. I thought, "Wow, zettelkasten sounds German. My last name sounds German. I should look this up!". I find it crazy what motivates us. ~~Hours~~ Days later after going down the multiple ~~layers of hell~~ rabbit holes, I settled using [vimwiki](https://github.com/vimwiki) with the [vim-zettel](https://github.com/michal-h21/vim-zettel) plugin. I am using [Zotero](https://www.zotero.org) as my reference manager. This set up is nice because with only a little bit of extra work it is fully compatible with [Zettlr](https://www.zettlr.com). Now I have the option of a nice GUI, or I can stick to the command line and vim and feel like a badass.
+This is my personal [zettelkasten](https://en.wikipedia.org/wiki/Zettelkasten) based on the work of [Niklas Luhmann](https://en.wikipedia.org/wiki/Niklas_Luhmann). It all started after reading Edwin Wenink's post [building a note-taking system with vanilla vim](https://www.edwinwenink.xyz/posts/42-vim_notetaking/). At the end, he mentions that the folder structure became too complicated and instead he plans to allow for organic growth zettelkasten style. I thought, "Wow, zettelkasten sounds German. My last name sounds German. I should look this up!". I find it crazy what motivates us. ~~Hours~~ Days later after going down the multiple ~~layers of hell~~ rabbit holes, I settled using [vimwiki](https://github.com/vimwiki) with the [vim-zettel](https://github.com/michal-h21/vim-zettel) plugin. I am using [Zotero](https://www.zotero.org) as my reference manager. This set up is nice because with only a little bit of extra work it is fully compatible with [Zettlr](https://www.zettlr.com). Now, I have the option of a nice GUI, or I can stick to the command line, and vim, and feel like a badass.
 
 ## Inspiration
 
@@ -77,7 +77,8 @@ call plug#end()
 "=====[ Add Tags Function ]===================
 
 function! AddTags()
-    normal! mm0wly$$p`mlv$:s/\%V:/ #/gAkbkbýa
+    normal! mm0wly$$p`mlv$:s/\%V:/ #/g
+Akbkbýa
 endfunction
 nnoremap <leader>at :call AddTags()<cr>
 

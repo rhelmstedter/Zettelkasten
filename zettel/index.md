@@ -1,6 +1,6 @@
 # Index
 
-- [Todo List](todo.md)
+- [TODO List](todo.md)
 - [How to Take Smarts Notes](202012111940.md):: structure note for Sönke Ahrens' book
 - [Vim](202012121047.md):: notes on Vim.
 - [Zettelkasten](202012141801.md):: general information on zk

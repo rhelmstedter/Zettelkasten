@@ -1,6 +1,6 @@
 # Index
 
-- [TODO List](todo.md)
+- [TODO List](../todo.md)
 - [How to Take Smart Notes](202012111940.md):: structure note for Sönke Ahrens' book
 - [Vim](202012121047.md):: notes on Vim.
 - [Zettelkasten](202012141801.md):: general information on zettelkasten
@@ -9,3 +9,5 @@
 - [Deliberate Practice](202101101242.md):: based on K. A. Ericsson's work
 - [Meditations](202101131017.md):: a structure note based on Meditations
 - [Mindfulness](202101240942.md):: Structure note
+- [Masters](202101241616.md)
+- 

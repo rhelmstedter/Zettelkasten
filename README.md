@@ -1,5 +1,7 @@
 # Zettelkasten
 
+If you want to access the zettelkasten, [index.md](zettel/index.md) is the place to start. 
+
 This is my personal [zettelkasten](https://en.wikipedia.org/wiki/Zettelkasten)
 based on the work of [Niklas
 Luhmann](https://en.wikipedia.org/wiki/Niklas_Luhmann). It all started after

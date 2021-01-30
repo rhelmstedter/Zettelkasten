@@ -10,4 +10,3 @@
 - [Meditations](202101131017.md):: structure note
 - [Mindfulness](202101240942.md):: Structure note
 - [Master's Spring 2021](202101241616.md):: Structure note
-- 

@@ -40,12 +40,8 @@ and files names to match when using Zettlr. In addition to vimwiki tags (e.g.
 in vim and use the tag feature in Zettlr. I added a function to my ~/.vimrc
 that adds hashtags. It is mapped to `<leader>at`.
 
-In addition to vimwiki and vim-zettel I have added a couple more Vim Plugins to
-make the writing experience more enjoyable:
-[pencil](https://github.com/reedes/vim-pencil) and
-[goyo](https:/github.com/junegunn/goyo.vim). After using this setup for a
-couple of weeks, I have come to realize that Pencil is amazing <3. I am not yet
-sold on Goyo. Don't get me wrong, I like it, but I typical forget to turn it on.
+In addition to vimwiki and vim-zettel I have added the Vim Plugins [pencil](https://github.com/reedes/vim-pencil) and
+[goyo](https:/github.com/junegunn/goyo.vim) to make the writing experience more enjoyable. After using this setup for awhile, I have come to realize that Pencil is amazing <3. I am not yet sold on Goyo. Don't get me wrong, I like it, but I typical forget to turn it on.
 
 The relevant portions of my ~/.vimrc are found below. I use [Vim-Plug](https://github.com/junegunn/vim-plug) as my plugin manager.
 
@@ -80,7 +76,8 @@ nnoremap <leader>nz :ZettelNew<space>
 
 " Adds #tags in addition to wiki tags for use in Zettlr
 function! AddTags()
-    normal! mm0wly$$p`mlv$:s/\%V:/ #/gAkbkbýa
+    normal! mm0wly$$p`mlv$:s/\%V:/ #/g
+Akbkbýa
 endfunction
 nnoremap <leader>at :call AddTags()<cr>
 

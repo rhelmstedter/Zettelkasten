@@ -11,3 +11,4 @@
 - [Mindfulness](202101240942.md):: structure note
 - [Master's Spring 2021](202101241616.md):: structure note
 - [Dreyer's English](202102091604.md):: structure note
+- [Regex](202103121245.md):: basics of regex

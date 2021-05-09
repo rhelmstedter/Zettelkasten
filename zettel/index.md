@@ -13,3 +13,5 @@
 - [Dreyer's English](202102091604.md):: structure note
 - [Regex](202103121245.md):: basics of regex
 - [Python::](202104050949.md) structure note
+- [Paradox](202105052137.md):: structure note
+- [Mind Your Decisions](202105052140.md):: structure note

@@ -16,3 +16,5 @@
 - [Paradox](202105052137.md):: structure note
 - [Mind Your Decisions](202105052140.md):: structure note
 - [Coding Projects](202105101842.md)
+
+

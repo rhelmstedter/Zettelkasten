@@ -15,7 +15,7 @@
 - [Python::](202104050949.md) structure note
 - [Paradox](202105052137.md):: structure note
 - [Mind Your Decisions](202105052140.md):: structure note
-- [Coding Projects](202105101842.md)
+- [Coding Projects](202105101842.md):: structure note
 - [100daysofcode](202105251457.md):: structure note
 
 

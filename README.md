@@ -18,6 +18,12 @@ because with only a little of extra work it is fully compatible with
 [Zettlr](https://www.zettlr.com). Now, I have the option of a nice GUI, or I
 can stick to the command line, and Vim, and feel like a badass.
 
+## Visualization
+
+I just stumbled across [plotext](https://github.com/piccolomo/plotext) which creates plots and displays them right in the terminal. I wrote a little python script that finds all the notes in the zettel directory, sorts them by month and then plots a time series. Super fun! Here is my zettelkasten as of Jul 12, 2021. 
+
+<br>![zettelkasten plot](notes_per_month.png)<br>
+
 ## Inspiration
 
 The following sources have been influential in the creation and structure of my zettelkasten.
@@ -39,10 +45,6 @@ and files names to match when using Zettlr. In addition to vimwiki tag (e.g.
 :tag:) I also add hashtags (e.g. #tag). This allows me to search tags directly
 in Vim and use the tag feature in Zettlr. I added a function to my ~/.vimrc
 that adds hashtags. It is mapped to `<leader>at`.
-
-As an added bonus I just stumbled across [plotext](https://github.com/piccolomo/plotext) which creates plots and displays them right in the terminal. I wrote a little python script that finds all the notes in the zettel directory, sorts them by month and then plots a time series. Super fun! Here is my zettelkasten as of Jul 12, 2021. 
-
-<br>![zettelkasten plot](notes_per_month.png)<br>
 
 In addition to vimwiki and vim-zettel I have added the Vim plugins [pencil](https://github.com/reedes/vim-pencil) and
 [goyo](https:/github.com/junegunn/goyo.vim) to make the writing experience more enjoyable. After using this setup for a while, I have come to realize that Pencil is amazing <3. I am not yet sold on Goyo. Don't get me wrong, I like it, but I typically forget to turn it on.

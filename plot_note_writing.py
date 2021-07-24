@@ -17,17 +17,20 @@ for date, count in count_by_month.items():
     x_axis.append(plt.string_to_time(date))
     y_axis.append(count)
 
-x_labels = "Dec 2020,Jan 2021,Feb 2021,Mar 2021,Apr 2021,May 2021,Jun 2021,Jul 2021".split(',')
+x_labels = "Dec 2020,Jan 2021,Feb 2021,Mar 2021,Apr 2021,May 2021,Jun 2021,Jul 2021,Aug 2021".split(',')
 
 print(f'Your Zettelkasten contains {len(notes)} notes.', end='\n\n')
 
+def plotter(x, y, foreground_color, background_color):
+    plt.plot(x, y, marker="dot", color=foreground_color)
+    plt.xticks(x_axis, x_labels)
+    plt.ticks_color(foreground_color)
+    plt.plotsize(88, 30)
+    plt.canvas_color(background_color)
+    plt.axes_color(background_color)
+
 plt.clp()
-plt.plot(x_axis, y_axis, marker="dot", color='white')
-plt.xticks(x_axis, x_labels)
+plotter(x_axis, y_axis, 'black', 'yellow')
 plt.title("Notes Written Per Month")
 plt.xlabel("Date")
-plt.ticks_color('white')
-plt.plotsize(87, 30)
-plt.canvas_color('blue')
-plt.axes_color('blue')
 plt.show()

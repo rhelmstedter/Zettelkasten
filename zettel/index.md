@@ -1,4 +1,4 @@
-# Index
+#Index
 
 - [TODO List](../todo.md)
 - [How to Take Smart Notes (Ahrens, 2017)](202012111940.md):: structure note
@@ -19,3 +19,4 @@
 - [100daysofcode](202105251457.md):: structure note
 - [Leadership in Turbulent Times (Goodwin, 2018)](202106131041.md):: structure note
 - [Everything is a Construct](202106240003.md)
+

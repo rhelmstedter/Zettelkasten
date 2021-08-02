@@ -1,5 +1,5 @@
-#Index
-
+# Index
+ 
 - [TODO List](../todo.md)
 - [How to Take Smart Notes (Ahrens, 2017)](202012111940.md):: structure note
 - [Vim](202012121047.md):: notes on Vim.

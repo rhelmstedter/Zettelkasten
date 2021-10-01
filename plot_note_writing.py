@@ -17,7 +17,7 @@ for date, count in count_by_month.items():
     x_axis.append(plt.string_to_time(date))
     y_axis.append(count)
 
-x_labels = "Dec 2020,Jan 2021,Feb 2021,Mar 2021,Apr 2021,May 2021,Jun 2021,Jul 2021,Aug 2021, Sep 2021, Oct 2021".split(',')
+x_labels = "Dec 2020,Jan 2021,Feb 2021,Mar 2021,Apr 2021,May 2021,Jun 2021,Jul 2021,Aug 2021,Sep 2021,Oct 2021".split(',')
 
 print(f'Your Zettelkasten contains {len(notes)} notes.', end='\n\n')
 

@@ -1,28 +1,14 @@
 # Zettelkasten
 
-If you want to access the zettelkasten, [index.md](zettel/index.md) is the place to start. 
+If you want to access the zettelkasten, see: [index.md](zettel/index.md). 
 
-This is my personal [zettelkasten](https://en.wikipedia.org/wiki/Zettelkasten)
-based on the work of [Niklas
-Luhmann](https://en.wikipedia.org/wiki/Niklas_Luhmann). It all started after
-reading Edwin Wenink's post [building a note-taking system with vanilla vim](https://www.edwinwenink.xyz/posts/42-vim_notetaking/). At the end, he
-mentions that the folder structure became too complicated and instead he plans
-to allow for organic growth zettelkasten style. I thought, "Wow, zettelkasten
-sounds German. My last name sounds German. I should look this up!". I find it
-crazy what motivates us. ~~Hours~~ Days later after going down the multiple
-~~layers of hell~~ rabbit holes, I settled using
-[vimwiki](https://github.com/vimwiki) with the
-[vim-zettel](https://github.com/michal-h21/vim-zettel) plugin. I am using
-[Zotero](https://www.zotero.org) as my reference manager. This set up is nice
-because with only a little of extra work it is fully compatible with
-[Zettlr](https://www.zettlr.com). Now, I have the option of a nice GUI, or I
-can stick to the command line, and Vim, and feel like a badass.
+This is my personal [zettelkasten](https://en.wikipedia.org/wiki/Zettelkasten) based on the work of [Niklas Luhmann](https://en.wikipedia.org/wiki/Niklas_Luhmann). It all started after reading Edwin Wenink's post [building a note-taking system with vanilla vim](https://www.edwinwenink.xyz/posts/42-vim_notetaking/). At the end, he mentions that the folder structure became too complicated, and instead he plans to allow for organic growth zettelkasten style. I thought, "Wow, zettelkasten sounds German. My last name sounds German. I should look this up!". I find it crazy what motivates us. ~~Hours~~ ~~Days~~ Months later, and after going down the multiple ~~layers of hell~~ rabbit holes, I settled using [vimwiki](https://github.com/vimwiki) with the [vim-zettel](https://github.com/michal-h21/vim-zettel) plugin. I am using [Zotero](https://www.zotero.org) as my reference manager. ~~This set up is nice because with only a little of extra work it is fully compatible with [Zettlr](https://www.zettlr.com). Now, I have the option of a nice GUI, or I can stick to the command line, and Vim, and feel like a badass.~~ Update: I have been taking notes for almost a year and have never used the Zettlr after installing it. This is not a knock on Zettlr at all. I just really like vim.
 
 ## Visualization
 
-I just stumbled across [plotext](https://github.com/piccolomo/plotext) which creates plots and displays them right in the terminal. I wrote a little python script that finds all the notes in the zettel directory, sorts them by month and then plots a time series. Super fun! Here is my zettelkasten as of Jul 12, 2021. 
+Recently, I stumbled across [plotext](https://github.com/piccolomo/plotext) which creates plots and displays them right in the terminal. I wrote a little python script that finds all the notes in the zettel directory, sorts them by month and then plots a time series. Super fun! Here is my zettelkasten as of Jul 12, 2021. 
 
-<br>![zettelkasten plot](notes_per_month.png)<br>
+<br>![Zettelkasten Plot](notes_per_month.png)<br>
 
 ## Inspiration
 
@@ -37,22 +23,16 @@ The following sources have been influential in the creation and structure of my 
 
 ## Configuration
 
-I use markdown instead of the wiki syntax (partly because I am lazy and don't
-want to learn wiki, but mostly to make it more compatible with other resources
-I use). I added the `.md` when vimwiki creates a new file and changed the
-format of the file name to `yyyymmddHHMM.md`. This allows links to be clickable
-and files names to match when using Zettlr. In addition to vimwiki tag (e.g.
-:tag:) I also add hashtags (e.g. #tag). This allows me to search tags directly
-in Vim and use the tag feature in Zettlr. I added a function to my ~/.vimrc
-that adds hashtags. It is mapped to `<leader>at`.
+I use markdown instead of the wiki syntax (partly because I am lazy and don't want to learn wiki, but mostly to make it more compatible with other resources I use). I added the `.md` when vimwiki creates a new file and changed the format of the file name to `yyyymmddHHMM.md`. This allows links to be clickable and files names to match when using Zettlr. In addition to vimwiki tags (e.g., :tag:) I also add hashtags (e.g., #tag). This allows me to search tags directly in Vim and use the tag feature in Zettlr.
 
-In addition to vimwiki and vim-zettel I have added the Vim plugins [pencil](https://github.com/reedes/vim-pencil) and
-[goyo](https:/github.com/junegunn/goyo.vim) to make the writing experience more enjoyable. After using this setup for a while, I have come to realize that Pencil is amazing <3. I am not yet sold on Goyo. Don't get me wrong, I like it, but I typically forget to turn it on.
+In the last few months, I have started using nvim pretty much exclusively. It has been such a journey I don't remember exactly when I switched or the exact reason that made me switch, but [The Primeagen](https://www.youtube.com/channel/UC8ENHE5xdFSwx71u3fDH5Xw) had a lot to do with it. The most relevant reason to use nvim for Zettelkasten is [telescope](https://github.com/nvim-telescope/telescope.nvim). This makes it super easy to find notes. I've left the `fzf` and `fzf.vim` plugins included, but I mostly use telescope to navigate files.
 
-The relevant portions of my ~/.vimrc are found below. I use [Vim-Plug](https://github.com/junegunn/vim-plug) as my plugin manager.
+In addition, I have added the Vim plugins [pencil](https://github.com/reedes/vim-pencil) and [goyo](https:/github.com/junegunn/goyo.vim) to make the writing experience more enjoyable. After using this setup for a while, I have come to realize that Pencil and Goyo are amazing <3. Vim livedown allows me to render the markdown in a browser in case I want to see it before committing.
+
+The portions of my ~/.vimrc related to zettelkasten are found below. If you are interested in my full config checkout my [dotfiles](https://github.com/rhelmstedter/dotfiles). I use [Vim-Plug](https://github.com/junegunn/vim-plug) as my plugin manager.
 
 ```vim
-"=====[ Vim-plug ]===================
+""{{{=====[ Vim-plug ]=========================================================
 
 call plug#begin()
     Plug 'vimwiki/vimwiki'
@@ -60,74 +40,117 @@ call plug#begin()
     Plug 'junegunn/fzf.vim'
     Plug 'junegunn/goyo.vim'
     Plug 'michal-h21/vim-zettel'
-    Plug 'tpope/vim-fugitive'
+    Plug 'shime/vim-livedown'
     Plug 'reedes/vim-pencil'
+    Plug 'nvim-lua/plenary.nvim'
+    Plug 'nvim-telescope/telescope.nvim'
 call plug#end()
 
-
-"=====[ Vimwiki and Vim-zettel ]===================
-
-set nocompatible
-filetype plugin on
-syntax on
-let g:zettel_format = "%Y%m%d%H%M"
-let g:vimwiki_list = [{'path': '~/path/to/zettelkasten/', 'syntax': 'markdown', 'ext': '.md'}]
-let g:vimwiki_markdown_link_ext = 1
-let g:vimwiki_ext2syntax = {'.md': 'markdown', '.markdown': 'markdown', '.mdown': 'markdown'}
-let g:nv_search_paths = ['~/path/to/Zettelkasten']
-let g:zettel_options = [{"front_matter" : [["tags", ""], ["citation", ""]]}]
-let g:zettel_fzf_command = "rg --column --line-number --ignore-case --no-heading --color=always "
-"Look, I know the command is ZettleNew, but in my brain mapping it to nz for new zettel makes more sense
-nnoremap <leader>nz :ZettelNew<space>
-
-" Adds #tags in addition to wiki tags for use in Zettlr
-function! AddTags()
-    normal! mm0wly$$p`mlv$:s/\%V:/ #/g
-Akbkbýa
-endfunction
-nnoremap <leader>at :call AddTags()<cr>
-
-
-"=====[ Pencil ]===================
-
-let g:pencil#wrapModeDefault = 'soft'   "default is 'hard'
-augroup pencil
-  autocmd!
-  autocmd FileType markdown,mkd call pencil#init()
-  autocmd FileType text         call pencil#init()
-augroup END
-
-
-"=====[ Goyo ]===================
-
-function! s:goyo_enter()
-  set nonumber
-  set nornu
-endfunction
-
-function! s:goyo_leave()
-  set number
-  set rnu
-endfunction
-
-autocmd! User GoyoEnter nested call <SID>goyo_enter()
-autocmd! User GoyoLeave nested call <SID>goyo_leave()
-
-
-"=====[ Word Processing ]====================
+"}}}
+"{{{=====[ Word Processing ]===================================================
 
 "doesn't split words
-set linebreak 
+set linebreak
 
-" 'fix' backspace
+"fix backspace
 set backspace=indent,eol,start
 
-"spell check
-set spell spelllang=en_us
-
+"Replaces closest spelling error with number one suggestion. From Chris Toomey.
 function! FixLastSpellingError()
     normal! mm[s1z=`m"
 endfunction
 nnoremap <leader>sc :call FixLastSpellingError()<cr>
 
+
+"}}}
+"{{{=====[ Vimwiki and Vim-zettel ]============================================
+
+set nocompatible
+filetype plugin on
+let g:zettel_format = "%Y%m%d%H%M"
+"Main zettelkasten plus two github repos I use for work
+let g:vimwiki_list = [{'path': '~/Zettelkasten/zettel', 'syntax': 'markdown', 'ext': '.md'},
+            \{'path': '~/Coding-in-Math-Class', 'syntax': 'markdown', 'ext': '.md'},
+            \{'path': '~/coding-class', 'syntax': 'markdown', 'ext': '.md'}]
+
+" Why learn vimwiki format when I sort of know markdown?
+let g:vimwiki_markdown_link_ext = 1
+let g:vimwiki_global_ext = 0
+let g:vimwiki_ext2syntax = {'.md': 'markdown', '.markdown': 'markdown', '.mdown': 'markdown'}
+let g:nv_search_paths = ['/Zettelkasten']
+let g:zettel_options = [{"front_matter" : [["tags", ""], ["citation", ""]]}]
+let g:markdown_fenced_languages = ['html', 'python', 'ruby', 'vim', 'lua']
+
+"I prefer ripgrep to ag, but honestly I just use telescope now
+let g:zettel_fzf_command = "rg --column --line-number --smart-case --no-heading --color=always"
+
+"let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.9 } }
+let $FZF_DEFAULT_OPTS="--ansi --preview-window 'right:60%' --layout reverse --margin=1,4"
+"Nice way to see how markdown will render
+nmap gm :LivedownToggle<CR>
+
+vnoremap nz :<C-U>ZettelNew<CR>
+
+"adds #tags in addition to wiki tags for use in Zettlr
+function! AddTags()
+    normal! mm0wly$$p`mlv$:s/\%V:/ #/gAkbkbýaF:lx$
+endfunction
+nnoremap <leader>at :call AddTags()<cr>
+nnoremap <C-e> :Buffers<CR>
+
+"toggle file type between md and vimwiki filetypes
+nnoremap <leader>md :set filetype=markdown<CR>
+nnoremap <leader>vw :set filetype=vimwiki<CR>
+
+"open zettelkasten to search notes while working in vim
+nnoremap <leader>zk :vsplit ~/Zettelkasten/zettel/index.md<cr> :cd %:p:h<cr>
+
+"don't expand links in normal mode
+augroup hide_links
+	autocmd!
+	autocmd FileType vimwiki set concealcursor=nc| set conceallevel=2|
+	autocmd FileType markdown set concealcursor=nc| set conceallevel=2|
+augroup END
+
+"}}}
+"{{{=====[ Telescope ]=========================================================
+
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+nnoremap <leader>fc <cmd>Telescope command_history<cr>
+
+"}}}
+"{{{=====[ Pencil ]============================================================
+
+let g:pencil#wrapModeDefault = 'soft'   "default is 'hard'
+
+augroup pencil
+    autocmd!
+    autocmd FileType markdown,mkd call pencil#init()
+    autocmd FileType text         call pencil#init()
+augroup END
+
+"}}}
+"{{{=====[ Goyo ]==============================================================
+
+function! s:goyo_enter()
+    set nonumber
+    set nornu
+endfunction
+
+function! s:goyo_leave()
+    set number
+    set rnu
+endfunction
+
+augroup Goyo
+    autocmd!
+    autocmd! User GoyoEnter nested call <SID>goyo_enter()
+    autocmd! User GoyoLeave nested call <SID>goyo_leave()
+augroup END
+
+nnoremap <leader>gy :Goyo<CR>
+"}}}
 ```

@@ -20,3 +20,4 @@
 + [Leadership in Turbulent Times (Goodwin, 2018)](202106131041.md):: structure note
 + [Everything is a Construct](202106240003.md)
 + [Taskwarrior](202107251111.md)
++ [Dear God Moments](202112022103.md)

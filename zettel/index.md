@@ -21,3 +21,4 @@
 + [Everything is a Construct](202106240003.md)
 + [Taskwarrior](202107251111.md)
 + [Dear God Moments](202112022103.md)
++ [The Tyranny of Merit (Sandel, 2020)](202112201241.md):: structure note

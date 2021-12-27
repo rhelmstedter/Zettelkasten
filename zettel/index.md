@@ -19,7 +19,7 @@
 + [100daysofcode](202105251457.md):: structure note
 + [Leadership in Turbulent Times (Goodwin, 2018)](202106131041.md):: structure note
 + [Everything is a Construct](202106240003.md)
-+ [Taskwarrior](202107251111.md)
++ [Taskwarrior](202107251111.md):: structure note
 + [Dear God Moments](202112022103.md)
 + [The Tyranny of Merit (Sandel, 2020)](202112201241.md):: structure note
-+ [Logic Fallacy](202112231434.md)
++ [Logic Fallacy](202112231434.md):: structure note

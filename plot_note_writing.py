@@ -1,9 +1,9 @@
-from datetime import datetime
 from collections import Counter
-import os
-import re
+from datetime import datetime
 from rich import print
+import os
 import plotext as plt
+import re
 
 
 def parse_notes():

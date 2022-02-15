@@ -12,7 +12,7 @@
 + [Master's Spring 2021](202101241616.md):: structure note
 + [Dreyer's English](202102091604.md):: structure note
 + [Regex](202103121245.md):: basics of regex
-+ [Python::](202104050949.md) structure note
++ [Python](202104050949.md):: structure note
 + [Paradox](202105052137.md):: structure note
 + [Mind Your Decisions](202105052140.md):: structure note
 + [Coding Projects](202105101842.md):: structure note
@@ -24,3 +24,4 @@
 + [The Tyranny of Merit (Sandel, 2020)](202112201241.md):: structure note
 + [Logic Fallacy](202112231434.md):: structure note
 + [Mechanisms Instead of Policies](202201132050.md)
++ [Why do people vote against their own interests?](202202060920.md)

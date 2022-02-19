@@ -25,3 +25,4 @@
 + [Logic Fallacy](202112231434.md):: structure note
 + [Mechanisms Instead of Policies](202201132050.md)
 + [Why do people vote against their own interests?](202202060920.md)
++ [Reshaping Understanding](202202181302.md)

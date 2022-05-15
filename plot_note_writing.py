@@ -1,9 +1,10 @@
+import os
+import re
 from collections import Counter
 from datetime import datetime
-from rich import print
-import os
+
 import plotext as plt
-import re
+from rich import print
 
 
 def parse_notes():
@@ -37,7 +38,7 @@ def plotter(x, y, foreground_color, background_color):
 if __name__ == "__main__":
     notes = parse_notes()
     x_axis, y_axis = build_axes(notes)
-    print(f"\nYour Zettelkasten contains [b]{len(notes)}[/b] notes.\n\n")
+    print(f"\nYour Zettelkasten contains [b]{len(notes)}[/b] notes.\n")
     plt.clp()
     plotter(x_axis, y_axis, "black", "yellow")
     plt.title("Notes Written Per Month")

@@ -1,4 +1,4 @@
-# Index
+# [Index](Index.md)
  
 + [TODO List](../todo.md)
 + [How to Take Smart Notes (Ahrens, 2017)](202012111940.md):: structure note
@@ -26,3 +26,4 @@
 + [Mechanisms Instead of Policies](202201132050.md)
 + [Why do people vote against their own interests?](202202060920.md)
 + [Reshaping Understanding](202202181302.md)
++ [Types of Confusion](202207261111.md)

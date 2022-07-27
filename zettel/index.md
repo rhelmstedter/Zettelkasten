@@ -26,4 +26,5 @@
 + [Mechanisms Instead of Policies](202201132050.md)
 + [Why do people vote against their own interests?](202202060920.md)
 + [Reshaping Understanding](202202181302.md)
-+ [Types of Confusion](202207261111.md)
++ [The Programmer's Brain](202207270902.md)
+

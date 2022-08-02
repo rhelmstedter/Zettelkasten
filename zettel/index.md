@@ -27,4 +27,5 @@
 + [Why do people vote against their own interests?](202202060920.md)
 + [Reshaping Understanding](202202181302.md)
 + [The Programmer's Brain](202207270902.md)
++ [Learn Better](202208011656.md)
 

@@ -6,7 +6,7 @@ from datetime import datetime
 import plotext as plt
 from rich import print
 
-MONTH_AND_YEAR = "%b %Y"
+MONTH_AND_YEAR = "%b-%y"
 
 
 def parse_notes() -> list[datetime]:

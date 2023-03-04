@@ -29,4 +29,6 @@
 + [The Programmer's Brain](202207270902.md)
 + [Learn Better](202208011656.md)
 + [Kinstretch](202210072016.md)
++ [Kettlebells](202302181659.md)
++ [Art of War](202303041347.md):: structure note
 

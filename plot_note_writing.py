@@ -6,7 +6,7 @@ from datetime import datetime
 import plotext as plt
 from rich import print
 
-MONTH_AND_YEAR = "%b-%y"
+MONTH_AND_YEAR = "%m-%y"
 
 
 def parse_notes() -> list[datetime]:
@@ -21,7 +21,7 @@ def parse_notes() -> list[datetime]:
     return [datetime.strptime(note, "%Y%m%d%H%M") for note in sorted(notes)]
 
 
-def build_axes(notes_time_series) -> tuple[list, list]:
+def build_axes(notes_time_series) -> tuple:
     """
     Build the axes for the plot based on the month and year each note was written.
 
@@ -43,8 +43,8 @@ def plotter(
     foreground_color: str,
     background_color: str,
 ) -> None:
-    plt.datetime.set_datetime_form(date_form=MONTH_AND_YEAR)
-    plt.plot_date(x_axis, y_axis, marker="dot", color=foreground_color)
+    plt.date_form("m-y")
+    plt.plot(x_axis, y_axis, marker="dot", color=foreground_color)
     plt.ticks_color(foreground_color)
     plt.plotsize(100, 30)
     plt.canvas_color(background_color)
@@ -55,7 +55,7 @@ if __name__ == "__main__":
     notes_time_series = parse_notes()
     x_axis, y_axis = build_axes(notes_time_series)
     print(f"\nYour Zettelkasten contains [b]{len(notes_time_series)}[/b] notes.\n")
-    plt.clp()
+    plt.clear_color()
     plotter(x_axis, y_axis, "black", "yellow")
     plt.title("Notes Written Per Month")
     plt.xlabel("Date")
